@@ -20,6 +20,11 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+
+.navbar {
+    backdrop-filter: blur(8px);
+}
+
 .logo {
     font-weight: 600;
 }
