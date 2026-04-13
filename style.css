@@ -1,64 +1,113 @@
-body {
+/* RESET */
+* {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Inter', sans-serif;
     background: #ffffff;
     color: #111;
 }
 
 /* NAVBAR */
-nav {
+.navbar {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
     border-bottom: 1px solid #eee;
 }
 
-nav a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
+.logo {
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
-nav a:hover {
-    color: #0ea5e9;
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #555;
 }
 
 /* CONTAINER */
 .container {
-    width: 85%;
     max-width: 900px;
-    margin: 60px auto;
-    text-align: center;
+    margin: 80px auto;
+    padding: 0 20px;
 }
 
-/* HEADINGS */
-h1 {
-    font-size: 2.5rem;
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
 }
 
-h2 {
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
     margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* CARD */
 .card {
-    background: #f9f9f9;
+    background: #f7f7f7;
     padding: 20px;
-    border-radius: 10px;
     margin-top: 20px;
 }
 
-/* BUTTON */
-button {
-    padding: 10px 20px;
-    border: none;
-    background: #0ea5e9;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+/* BLOG ITEM */
+.blog-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
 }
 
-button:hover {
-    background: #0284c7;
+.blog-item h3 {
+    margin-bottom: 5px;
+}
+
+.blog-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 60px;
+    color: #777;
 }
